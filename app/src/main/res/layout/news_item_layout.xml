@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/wrapper"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/mtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Headings"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               android:layout_below="@+id/mtitle"
+                android:layout_marginTop="20dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mtitle"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/image"
+                android:fontFamily="sans-serif-medium"
+                android:text="Human rights and good governance (democratisation and elections, security and rule of law), Sexual and reproductive health and rights, Water management, Economic development (food security and agriculture, agro food and horticulture, energy, creative industries)"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

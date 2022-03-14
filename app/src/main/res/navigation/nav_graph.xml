@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="com.cherish.mynewtodoapp.view.FragmentDetails"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.cherish.mynewtodoapp.view.FragmentMain"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main"/>
+    <fragment
+        android:id="@+id/fromFragment"
+        android:name="com.cherish.mynewtodoapp.FromFragment"
+        android:label="fragment_from"
+        tools:layout="@layout/fragment_from" />
+
+</navigation>
